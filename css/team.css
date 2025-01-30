@@ -1,0 +1,247 @@
+/* CSS to team */
+
+#team{
+    height:auto;
+    background-color: #f5f5f5;
+}
+
+.team{
+    height:100%;
+    background-color: #F5f5f5;
+    display: flex;
+    align-items: center;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-bottom: 6%;
+}
+
+.content-team{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-team h1{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    width:100%;
+    text-align: center;
+}
+
+
+.cards-teamB{
+    /*background-color: blue;*/
+    width:100%;
+    height:auto;
+    margin-top: 2%;
+    display:flex;
+    /*justify-content:space-between;*/
+    padding:0;
+}
+
+.media-scrollerB{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch; /* Forces children to have equal height */
+    gap: 2%;
+    background-color: transparent;
+    overflow:hidden;
+
+}
+
+.media-scrollerB1{
+    width:30%;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+}
+
+.media-scrollerB2{
+    width:60%;
+    flex:1;
+    display:flex;
+    flex-direction: column; 
+    
+}
+
+/* Fade effect on the right edge */
+.media-scrollerB1, .media-scrollerB2 {
+    position: relative; /* Outer container */
+}
+
+/* Fade effect on the right edge */
+.media-scrollerB1::after, .media-scrollerB2::after {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px; /* Adjust the width to control the size of the gradient */
+    pointer-events: none; /* Allows clicks to pass through to the content */
+    background: linear-gradient(to left, #f5f5f5, transparent); /* Fade effect */
+    z-index: 1; /* Ensures it overlays the scrolling content */
+}
+
+.content-scrollerB1{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 24%; /*deixar valor que deixa o ultimo item meio tapado meio de fora para mostrar que continua*/
+    background-color: transparent;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    gap:118%;
+    padding-right: 60%;
+}
+
+.content-scrollerB2{
+    display:grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 24%; /*deixar valor que deixa o ultimo item meio tapado meio de fora para mostrar que continua*/
+    background-color: transparent;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    gap:24%;
+    padding-right: 25%;
+}
+
+/* Hover effect for team cards */
+.team-cardB {
+    background-color: white;
+    width: 17vw;
+    height: 22vw;
+    border-radius: 30px;
+    /*background-color: blueviolet;*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*margin-bottom: 10%;
+    margin-top: 10%;
+    */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin: 14%;
+}
+
+
+.content-scrollerB1 .team-cardB{
+    margin-top:60%;
+    margin-bottom:20%;
+    margin-left:18%;
+}
+
+.content-scrollerB2 .team-cardB{
+    margin-top:20%;
+}
+
+.team-cardB:hover {
+    transform: translateY(-10px); /* Moves the card up by 10px */
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.cards-teamB h2{
+    margin-left: 2vw;
+}
+  
+
+.team-card-top{
+    height:70%;
+}
+
+.team-card-top img{
+    width:100%;
+    height:auto;
+}
+
+.team-card-bottom{
+    height:30%;
+    background-color: white;
+    padding:6%;
+}
+
+.team-card-bottom p{
+    margin-top: 3%;
+}
+
+/* Style for popup */
+.popup-section {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it's on top of other content */
+  }
+  
+  /* Style for popup content */
+  .popup-content {
+    background-color: #f5f5f5;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    width: 40%;
+    height: 80%;
+    line-height: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    position: relative; /* To position the close button inside this container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better appearance */
+  }
+
+  .popup-header {
+    display: flex;
+    align-items: center; /* Vertically align the icon with the text */
+    justify-content: center;
+    gap: 1%; /* Add spacing between the title and icon */
+  }
+
+  #popup-icon-link{
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  }
+
+  #popup-icon-link:hover {
+    transform: translateY(-5px); /* Moves the element up by 10px */
+}
+
+  #popup-description{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #popup-description p{
+    padding:2.5%;
+  }
+
+  .popup-content p:nth-child(even) {
+    background-color: #f5f5f5;
+    
+  }
+  
+  .popup-content p:nth-child(odd) {
+    background-color: #E6E5E5;
+    border-radius: 8px;
+  }
+
+  .team-cardB:hover {
+    cursor: pointer !important; /* Changes the cursor to pointer when hovered */
+  }
+  
+/* Style for the close button */
+.close-popup {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    position: absolute; /* Keeps it inside the popup container */
+    top: 10px; /* Distance from the top of the popup */
+    right: 20px; /* Distance from the right of the popup */
+    z-index: 100; /* Ensures the close button stays above other content */
+  }
+  
+  

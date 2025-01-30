@@ -1,0 +1,69 @@
+/* CSS to contact */
+
+#contact{
+    height:auto;
+}
+
+.contact{
+    height:100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 22vw;
+    padding-right: 22vw;
+}
+
+.content-contact{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+
+.content-contact .button{
+    background-color: #ffffff;
+}
+
+.content-contact h1{
+    margin-top: 10vh;
+    width:100%;
+    text-align: center;
+
+}
+
+.cards-contact{
+    width:100%;
+    margin-top: 2%;
+    background-color: blue;
+}
+
+.content-contact p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.contact-logos{
+    display:inline-flex;
+    justify-content: center;
+}
+
+.contact-logos img{
+    margin-top: 3vh;
+    width:60px;
+    padding:4%;
+}
+
+.contact-logos a{
+    padding:2%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-logos a:hover {
+    transform: translateY(-5px); /* Moves the element up by 10px */
+}
