@@ -95,13 +95,13 @@ h3{
 
 p, a{
     font-family: "Roboto";
-    font-weight: regular;
+    font-weight: 400;
 }
 
 /*texto no hero*/
 h4{ 
     font-family: "Roboto";
-    font-weight: 360;
+    font-weight: 400;
     font-size: 17px;
     line-height: 22px;
 }
