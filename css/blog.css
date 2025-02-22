@@ -1,0 +1,137 @@
+/* CSS to blog */
+
+#blog{
+    height:auto;
+    background-color: #f5f5f5;
+}
+
+.blog{
+    height:100%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-bottom: 6%;
+}
+
+.content-blog{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.content-blog h1{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    width:100%;
+    text-align: center;
+}
+
+.blog-description{
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.entries{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));    
+    gap: 1%; /* Spacing between the cards */
+    width: 100%;
+    height:auto;
+    justify-content: center; /* Center the grid */
+    align-items: start; /* Align cards to the top of each row */
+}
+
+/*PREVIEW CARD*/
+.entry-card {
+    background-color: white;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 30px;
+    /*background-color: blueviolet;*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    margin: 10%;
+}
+
+.entry-card-top{
+    height:70%;
+    
+}
+
+.entry-card-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.entry-card-bottom{
+    height:30%;
+    background-color: white;
+    padding:6%;
+}
+
+.entry-card-bottom p{
+    margin-top: 3%;
+}
+
+.entry-card:hover {
+    transform: translateY(-10px); /* Moves the card up by 10px */
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+    cursor: pointer !important; /* Changes the cursor to pointer when hovered */
+}
+
+/* Style for popup */
+.popup-section-blog {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Make sure it's on top of other content */
+  }
+  
+  /* Style for popup content */
+  .popup-content-blog {
+    background-color: #f5f5f5;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 10px;
+    width: 80%;
+    height: 90%;
+    line-height: 20px;
+    overflow-y: auto; /* Enables vertical scrolling */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    position: relative; /* To position the close button inside this container */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better appearance */
+  }
+
+  .popup-content-blog img{
+    display: block; /* Ensure the image respects margin auto */
+    margin: 0 auto; /* Center the image horizontally */
+    width: auto; /* Adjust image width */
+    height: 60%; /* Maintain aspect ratio */
+  }
+
+  .popup-content-blog p{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 2%;
+    text-align: left;
+  }

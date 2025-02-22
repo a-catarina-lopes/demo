@@ -1,0 +1,350 @@
+/* navbar + footer CSS*/
+
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* navbar*/
+
+header {
+    width: 100vw;
+    padding-left: 9vw;
+    padding-right: 9vw;
+    /*background-color: red;*/
+    background-color: #F5F5F5;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   /*justify-content: center;*/
+}
+    
+
+.navbar {
+    width: 100%;
+    height: 8vh;
+    min-height: 50px;
+    /*background-color: blue;*/
+    background-color: #F5F5F5;
+    display:inline-flex;
+    justify-content: space-between;
+    font-family: "Roboto";
+    font-size: 17px;
+    font-weight: regular;
+    color: black;
+    /*font-size: 20px;
+    margin: 10px;*/
+}
+
+.navbar-logo {
+    display:inline-flex;
+    height:100%;
+    /*background-color: white;*/
+    background-color: transparent;
+}
+
+.logo{
+    margin:auto;
+    font-weight: 465;
+    letter-spacing: 0.6px;
+    font-size: 28px;
+}
+
+.navbar-menu {
+    /*background-color: blue;*/
+    /*width:40%;*/
+    height:100%;
+    display:inline-flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.navbar-li2 {
+    display:inline-flex;
+    margin:auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    /*padding: 10px;*/
+    padding:1.8%;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 16px;
+    border-width: 1.5px; /* Set border width */
+    border-style: solid; /* Set border style */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.navbar-li {
+    background-color: transparent;
+    display:inline-flex;
+    margin:auto;
+    margin-right: 16px;
+    margin-left: 16px;
+    /*margin:1%;*/
+    /*justify-content: space-between;*/
+}
+
+.nav-li2 {
+    text-decoration: none;
+    color: inherit; /* Keeps the color of the link as it was */
+}
+
+.logo {
+    text-decoration: none;
+    font-family: "RobotoMedium";
+    color: inherit; /* Keeps the color of the link */
+    position: relative; /* Needed for pseudo-element positioning */
+    display: inline-block; /* Ensures the element respects its size */
+    overflow: visible; /* Allows the underline to render correctly */
+    z-index: 1; /* Keeps the text above the underline */
+}
+
+/* Always-visible thick underline */
+.logo::after {
+    content: ""; /* Create the pseudo-element */
+    position: absolute;
+    bottom: -3px; /* Position the underline below the text */
+    left: 0;
+    width: 100%; /* Span the full width of the element */
+    height: 12px; /* Thickness of the underline */
+    background-color: #DCA2DC; /* Default color of the underline */
+    z-index: -1; /* Ensure the underline is behind the text */
+    transform: scaleX(1); /* Always fully visible */
+    transform-origin: left; /* Keep animation from the left for hover effect */
+    transition: background-color 0.3s ease-in-out; /* Smooth color transition only */
+}
+
+/* Change underline color on hover */
+.logo:hover::after {
+    background-color: #BCD7FF; /* New color on hover */
+}
+
+
+
+/* aqui para a frente foi para o efeito hover */
+.nav-li {
+    text-decoration: none;
+    color: inherit; /* Keeps the color of the link as it was */
+    position: relative; /* Needed for the pseudo-element positioning */
+    display: inline-block; /* Ensure the element respects its size */
+    overflow: visible; /* Allows the underline to render correctly */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+    z-index: 2;
+}
+
+/* The thick underline effect */
+.nav-li::after {
+    content: ""; /* Create a pseudo-element */
+    position: absolute;
+    bottom: -3px; /* Position just below the text */
+    left: 0;
+    width: 100%; /* Span the full width of the element */
+    height: 12px; /* Thickness of the underline */
+    background-color: #BCD7FF; /* Color of the underline */
+    opacity: 0; /* Start with the underline hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition to fade it in */
+    z-index: -1;
+}
+
+/* When the nav-li is hovered, the underline will appear */
+.nav-li:hover::after {
+    opacity: 1; /* Make the underline visible */
+}
+
+/* Active state */
+.nav-li.active::after {
+    opacity: 1; /* Make the underline visible */
+}
+
+
+.navbar-menu .navbar-li a[href="blog.html"] {
+    color:#41598E;
+    /*color:#DCA2DC;*/
+    font-weight: bold; /* Example: Make text bold */
+  }
+
+  footer .navbar-menu .navbar-li a[href="blog.html"] {
+    color:#f5f5f5;
+    /*color:#DCA2DC;*/
+    font-weight: bold; /* Example: Make text bold */
+  }
+
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* sidebar TABLET*/
+
+  .sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height: 100vh;
+    width:70vw;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:4%;
+}
+
+.sidebar .navbar-menu{
+    width:100%;
+}
+
+.sidebar .navbar-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar .navbar-li, .sidebar .navbar-li2{
+    margin-top:3%;
+    margin-bottom: 3%;
+    font-size: 26px;
+}
+
+.sidebar .navbar-li:nth-of-type(2) {
+    margin-top: 10% !important;
+}
+
+.menuHamb{
+    margin: auto;
+    margin-right: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* footer*/
+
+footer{
+    background-color: #41598E;
+    height:auto;
+    width:100%;
+}
+
+.footer{
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-top{
+    display:inline-flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    padding:2%;
+    padding-top:1%;
+}
+
+.footer-top h1{
+    margin-top: 2%;
+    font-size: 30px;
+    background-color: transparent;
+    height:100%;
+    margin-right: 1.6%;
+    color:#f5f5f5;
+}
+
+.footer-top a{
+    margin-top: 2%;
+    padding:1.3%;
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+    /*font-size: 30px;*/
+    background-color: transparent;
+    margin-left: 1.6%;
+}
+
+.footer-top .button{
+    border-radius:22px;
+    height:60%;
+}
+
+
+.footer-bottom{
+    display:inline-flex;
+    justify-content: center;
+    width:100%;
+    align-items: center;
+    padding-top:2%;
+    padding-bottom:2%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    color:#f5f5f5;
+}
+
+.footer-bottom .navbar-logo{
+    margin-left:2%;
+    margin-right:2%;
+}
+.footer-bottom .navbar-menu{
+    margin-left:2%;
+    margin-right:2%;
+}
+.footer-bottom .footer-logos{
+    background-color: transparent;
+    margin-left:2%;
+    margin-right:2%;
+    margin-bottom:0;
+    display:flex;
+    align-items: center;
+    height:100%;
+}
+
+.footer-logos{
+    width:16%;
+}
+
+.footer-logos a{
+    width:100%;
+    height:auto;
+
+    display:flex;
+    justify-content: flex-end;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+
+}
+
+.footer-logos a:hover {
+    transform: translateY(-5px); /* Moves the element up by 10px */
+}
+
+.footer-logos img{
+    width:60%;
+}
+
+.stroke{
+    width:80%;
+    height:1.5px;
+    background-color: #f5f5f5;
+}
+
+.footer-footer {
+    display: flex; /* Enable Flexbox */
+    justify-content: space-between; /* Push the child elements to opposite ends */
+    align-items: center; /* Vertically center the text */
+    font-size: 12px; /* Tiny text size */
+    padding-bottom:1%;
+    width:80%;
+    color:#f5f5f5
+}
+
+.footer-footer p {
+    margin: 0; /* Remove default margins */
+}
+
+.footer-footer a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+.showMobile{
+    display:none;
+}

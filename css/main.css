@@ -1,0 +1,381 @@
+/* Universal selector reset + main CSS*/
+
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* Universal selector reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* MAIN */
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/*
+main{
+    padding-left: 9vw;
+    padding-right: 9vw;
+}
+    */
+
+.sect {
+
+    /*height:100vh;*/
+    width:100%;
+    /*
+    padding-left: 9vw;
+    padding-right: 9vw;
+    */
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+/*TIPOGRAFIA*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+
+@font-face {
+    font-family: 'SourceSerifProSemibold';
+    src: url('../fonts/SourceSerif/SourceSerifPro-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoMedium';
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RobotoSemiBold';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+body {
+    font-family: 'MyCustomFont', sans-serif;
+}
+    */
+
+h1{
+    font-family: "SourceSerifProSemibold";
+    font-size: 52px;
+    line-height: 66px;
+}
+
+h2{
+    font-family: "RobotoMedium";
+    font-weight: 460;
+    font-size: 28px;
+    line-height: 50px;
+}
+
+h3{
+    font-family: "SourceSerifProSemibold";
+    font-size: 22px;
+}
+
+p, a{
+    font-family: "RobotoRegular";
+    /*font-weight:300;*/
+}
+
+/*texto no hero*/
+h4{ 
+    font-family: "RobotoRegular";
+    font-size: 17px;
+    line-height: 22px;
+}
+
+h5{ /*pop up titulo team*/
+    font-family: "SourceSerifProSemibold";
+    font-size: 30px;
+    line-height: 60px;
+}
+
+/*BOTÕES*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+
+/* botões */
+.button{
+    text-decoration: none;
+    color: inherit;
+    display:inline-flex;
+    margin-top:3.5%;
+    padding:1.8%;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-radius: 16px;
+    font-size: 17px;
+    border-width: 1.5px; /* Set border width */
+    border-style: solid; /* Set border style */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/*button blue 1 vazio e depois pinta*/
+.button-blue-1{
+    background-color: transparent !important;
+    border-color: #41598E; /* Set border color */
+    color: #41598E; /* Text color */
+}
+
+.button-blue-1:hover {
+    background-color: #41598E!important; /* New background color on hover */
+    color: #F5F5F5; /* Change text color for contrast */
+    border-color: transparent; /* Make border invisible */
+}
+
+/*button blue 2 pintado e depois vazio*/
+.button-blue-2{
+    background-color: #41598E !important;
+    border-color: transparent; /* Set border color */
+    color: #F5F5F5; /* Text color */
+}
+
+.button-blue-2:hover {
+    background-color: transparent !important; /* New background color on hover */
+    color: #41598E; /* Change text color for contrast */
+    border-color: #41598E; /* Make border invisible */
+}
+
+/*button pink 1 vazio e depois pinta*/
+.button-pink-1{
+    background-color: #ffffff !important;
+    border-color: transparent; /* Set border color */
+    color: #000000; /* Text color */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.button-pink-1:hover {
+    background-color: #ffffff; /* New background color on hover */
+    color: #000000; /* Change text color for contrast */
+    border-color: transparent; /* Make border invisible */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Moves the element up by 10px */
+}
+
+/*button pink 2 pintado e depois vazio*/
+.button-pink-2{
+    background-color: #DCA2DC !important;
+    border-color: transparent; /* Set border color */
+    color: #F5F5F5; /* Text color */
+}
+
+.button-pink-2:hover {
+    background-color: transparent !important; /* New background color on hover */
+    color: #DCA2DC; /* Change text color for contrast */
+    border-color: #DCA2DC; /* Make border invisible */
+}
+
+/*button blue 1 vazio e depois pintado de branco*/
+.button-blue-3{
+    background-color: transparent !important;
+    border-color: #f5f5f5; /* Set border color */
+    color: #f5f5f5; /* Text color */
+}
+
+.button-blue-3:hover {
+    background-color: #f5f5f5!important; /* New background color on hover */
+    color: #41598E; /* Change text color for contrast */
+    border-color: transparent; /* Make border invisible */
+}
+
+/*TRANSIÇÕES entre secções hip1*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+
+.curve {
+    padding:0;
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* No extra space beyond the curve */
+    background-color: #f5f5f5;
+ }
+  
+  .curve svg {
+    display:block;
+    margin:0;
+    padding:0;
+ }
+
+ .curve2 {
+    padding:0;
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* No extra space beyond the curve */
+    background-color: #41598E;
+ }
+  
+  .curve2 svg {
+    display:block;
+    margin:0;
+    padding:0;
+ }
+
+ .curve3 {
+    padding:0;
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* No extra space beyond the curve */
+    background-color: #f5f5f5;
+ }
+  
+  .curve3 svg {
+    display:block;
+    margin:0;
+    padding:0;
+ }
+
+ .curve4 {
+    padding:0;
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* No extra space beyond the curve */
+    background-color: #F3DCED;
+ }
+  
+  .curve4 svg {
+    display:block;
+    margin:0;
+    padding:0;
+ }
+
+ .curve5 {
+    padding:0;
+    position: relative;
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height automatically */
+    overflow: hidden; /* No extra space beyond the curve */
+    background-color: #BCE7D2;
+ }
+  
+  .curve5 svg {
+    display:block;
+    margin:0;
+    padding:0;
+ }
+
+ /*UNDERLINE*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+/* /////////////////////////////////////////////////////////////////////////////////////*/
+
+/* Common underline styles */
+.underline, .underline2, .underline3, .underline4, .underline5, .underline6, .underline7, .underline8 {
+    text-decoration: none;
+    color: inherit; /* Keeps the color of the link */
+    position: relative;
+    display: inline-block; /* Ensures the element respects its size */
+    overflow: visible; /* Allows the underline to render correctly */
+    z-index: 1; /* Keeps the text above the underline */
+}
+
+/* Common pseudo-element styles for underline effects */
+.underline::after, .underline3::after, .underline4::after, .underline5::after, .underline6::after, .underline7::after, .underline8::after {
+    content: "";
+    position: absolute;
+    bottom: 4px; /* Default underline position */
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Individual customizations */
+.underline::after { height: 26px; background-color: #BCD7FF; }
+.underline2 { 
+    text-decoration: underline;
+    text-decoration-thickness: 4px; 
+    text-decoration-color: #FEE2B7; 
+    text-underline-offset: 2px; 
+    display: inline; /* Ensure span doesn't cause block rendering */
+}
+.underline3::after { height: 26px; background-color: #FEE2B7; }
+.underline4::after { height: 26px; background-color: #BCE7D2; }
+.underline5::after { bottom: 0; height: 12px; background-color: #FEE2B7; }
+.underline6::after { height: 26px; background-color: #f5f5f5; }
+.underline7::after { height: 26px; background-color: #F3DCED; }
+.underline8::after { height: 26px; background-color: #DCA2DC; }
+
+
+.underline9 {
+    text-decoration: none;
+    color: inherit; /* Keeps the color of the link */
+    position: relative;
+    display: inline-block; /* Ensures the element respects its size */
+    overflow: visible; /* Allows the underline to render correctly */
+    z-index: 1; /* Keeps the text above the underline */
+}
+
+.underline9::after {
+    content: "";
+    position: absolute;
+    bottom: 10px; /* Adjust the position to make it closer to the text */
+    left: 0;
+    width: 100%;
+    height: 14px; /* Thinner underline */
+    background-color: #FEE2B7; /* White color for the underline */
+    z-index: -1; /* Places the underline behind the text */
+    transform: scaleX(1); /* Keeps the underline stretched by default */
+    transform-origin: left; /* Adjusts scaling from the left side */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for color */
+}

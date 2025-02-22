@@ -1,0 +1,245 @@
+/* CSS to services */
+
+#services{
+    height:auto;
+    background-color: #FEE2B7;
+}
+
+.services{
+    height:100%;
+    background-color: #FEE2B7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 6%;
+}
+
+.content-services{
+    width:100%;
+    /*background-color: brown;*/
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-services h1{
+    margin-top: 10vh;
+    width:100%;
+    text-align: center;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* Terapia Individual */
+
+.cards-services{
+    width:100%;
+    height:auto;
+    display:flex;
+    margin-top: 6%;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    border-width: 1.5px; /* Set border width */
+    border-style: solid; /* Set border style */
+    /*border-color: #B6B3B3;*/ /* Set border color */
+    border-color: transparent;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.cards-services:hover {
+    transform: translateY(-10px); /* Moves the card up by 10px */
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.card-img{
+    width:35%;
+    background-color: #f5f5f5;
+    /*border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;*/
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.card-img img{
+    height:100%;
+}
+
+.card-content{
+    /*width:65%;*/
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 40px;
+    background-color: #f5f5f5;
+}
+
+.card-top{
+    width:100%;
+    padding:5%;
+    padding-bottom: 3%;
+}
+
+.card-top p{
+    margin-top: 4%;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.card-top a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-bottom{
+    width:100%;
+    padding:5%;
+    padding-top: 1.5%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+/* Terapia Casal */
+
+.cards-services2{
+    width:100%;
+    height:auto;
+    display:flex;
+    margin-top: 6%;
+    background-color: #f5f5f5;
+    border-radius: 40px;
+    border-width: 1.5px; /* Set border width */
+    border-style: solid; /* Set border style */
+    border-color: #B6B3B3; /* Set border color */
+}
+
+.card-img2{
+    width:35%;
+    background-color: #f5f5f5;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    overflow: hidden;
+}
+
+.card-img2 img{
+    height:100%;
+}
+
+.card-content2{
+    width:65%;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: #f5f5f5;
+}
+
+.card-top2{
+    width:100%;
+    padding:5%;
+    padding-bottom: 2%;
+}
+
+.card-top2 p{
+    margin-top: 4%;
+    font-size: 17px;
+    line-height: 21px;
+}
+
+.card-bottom2{
+    width:100%;
+    padding:5%;
+    padding-top: 1%;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////// */
+
+.rules{
+    width:100%;
+    height: 100%;
+    /*margin-top: 8%;*/
+    /*background-color: #BCE7D2;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #F5F5F5;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rules h1{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding-top: 5%;
+}
+
+.cards-rules2{
+    width:100%;
+    height:auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: transparent;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));    
+    gap: 3.5%; /* Spacing between the cards */
+    width: 100%;
+    height:auto;
+    justify-content: center; /* Center the grid */
+    align-items: start; /* Align cards to the top of each row */    
+}
+
+.cards-rules2:last-of-type {
+    /* Add your styles here */
+    padding-bottom: 6%;
+}
+
+.rule {
+    width: 100%;
+    height: 47vh;
+    background-color: #ffffff;
+    padding: 10% !important;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+.rule:hover {
+    transform: translateY(-10px); /* Moves the element up by 10px */
+    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.2); /* Enhances shadow on hover */
+}
+
+.rule p{
+    margin-top:6%;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.rule .tiny{
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.rule a{
+    margin-top:6%;
+    background-color:white;
+    padding:4%;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.rule h2{
+    margin-top:6%;
+    font-size: 24px;
+}
+
+.rule img{
+    height:10vh;
+    width:auto;
+}
