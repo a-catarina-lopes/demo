@@ -617,10 +617,9 @@
     }
 
     h4{ /*texto abaixo título no hero*/
-        font-family: "RobotoMedium";
+        font-family: "RobotoRegular";
         font-size: 18px;
         line-height: 22px;
-        font-weight: 560;
     }
 
     .popup-header h5{
