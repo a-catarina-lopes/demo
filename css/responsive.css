@@ -616,7 +616,7 @@
     }
 
     h4{ /*texto abaixo título no hero*/
-        font-family: "RobotoRegular";
+        font-family: "RobotoRegular" !important;
         font-size: 18px;
         line-height: 22px;
     }
