@@ -821,7 +821,7 @@
         align-items: center !important;
     }
     .footer{
-        height:26vh;
+        height:30vh;
         display: flex;
     flex-wrap: wrap;
     flex-direction: column;
