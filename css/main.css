@@ -103,6 +103,13 @@ img{
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RobotoThin';
+    src: url('../fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*
 body {
     font-family: 'MyCustomFont', sans-serif;
