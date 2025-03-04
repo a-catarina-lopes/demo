@@ -824,8 +824,8 @@
         align-items: center !important;
     }
     .footer{
-        min-height: auto;
-        height: auto;
+        min-height: auto !important;
+        height: auto !important;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
