@@ -1,0 +1,995 @@
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+
+/* RESPONSIVE */
+/* MEDIDAS DESKTOP GRANDE */
+@media (min-width: 1450px) {
+
+    /*//////////////////////////////////////////////////////////////////////GERAL, HERO*/
+
+    h1{ /*hero, títulos secções, texto do footer*/
+        font-family: "Source Serif Pro semibold";
+        font-size: 60px;
+        line-height: 74px;
+    }
+
+    .hero-dta { /*hero*/
+        width:54%;
+    }
+
+    .hero-esq { /*hero*/
+        width:46%;
+    }
+
+    h4{ /*texto hero*/
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////BUTTONS*/
+
+    .button{
+        font-size: 20px;
+    }
+
+    .button, .button-blue-1{
+        border-width: 2px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////NAVBAR*/
+
+    .navbar{
+        font-size: 20px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////ABOUT*/
+
+    .about-text{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .about {
+        height: 80%;
+        padding-bottom: 2%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////TEAM*/
+
+    h3{
+        font-size: 28px;
+    }
+
+    .team-card-bottom p{
+        font-size: 20px;
+    }
+
+    #popup-description p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////SERVICES*/
+
+    h2{
+        font-size: 32px;
+    }
+
+    .card-top p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////SERVICES2*/
+
+    .rule h2{
+        font-size: 32px;
+    }
+
+    .rule p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .rule .tiny{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////FAQs*/
+
+    .cards-faqs p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .cards-faqs .button{
+        font-size: 20px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////REVIEWS*/
+
+    .review-card-content p{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////CONTACTO*/
+
+    .content-contact p{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Footer*/
+
+    .footer-top h1{
+        font-size: 40px;
+    }
+
+    .navbar-menu {
+        font-size: 20px;
+    }
+
+    .footer-bottom{
+        width:100%;
+    }
+
+    .footer-footer{
+        font-size: 14px;
+        
+    }
+
+    .stroke{
+        height:3px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Blog/Newsletter*/
+
+    .content-blog p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .popup-content-blog p{
+        font-size: 20px !important;
+        line-height: 26px;
+    }
+
+}
+
+/* MEDIDAS DESKTOP PEQUENO */
+/* CÓDIGO TODO */
+@media (min-width: 1092px) and (max-width: 1449px) {
+
+}
+
+/* CARDS TEAM COM NOMES A CABER*/
+/* AINDA DESKTOP PEQUENO*/
+@media (max-width: 1280px) {
+
+    .team-cardB{
+        height: 24vw;
+    }
+
+    .team-card-top{
+        height:60%;
+    }
+
+    .team-card-bottom{
+        height:40%;
+    }
+}
+
+/* AINDA DESKTOP PEQUENO, QUASE TABLET*/
+/* aquele stress entre desktop quase tablet do FOOTER */
+@media (min-width: 1091px) and (max-width: 1155px) {
+    .footer-bottom .logo{
+        font-size: 21px;;
+    }
+}
+
+/* NAVBAR A MUDAR DE INLINE PARA MENU HAMBURGUER*/
+/* TRANSIÇÃO DESKTOP — TABLET*/
+@media (max-width: 1091px) {
+
+    .hideOnMobile{
+       display:none;
+    }
+
+    .hideOnDesktop{
+        display:flex;
+     }
+}
+
+/* NAVBAR A MUDAR DE INLINE PARA MENU HAMBURGUER*/
+/* TRANSIÇÃO DESKTOP — TABLET*/
+@media (min-width: 1091px) {
+    .hideOnDesktop{
+       display:none;
+    }
+}
+
+/* MEDIDAS TABLET */
+/*481px-1091px*/
+@media (max-width: 1091px) {
+
+    /*//////////////////////////////////////////////////////////////////////GERAL, HERO*/
+
+    /*underline*/
+    /*h1*/
+    .underline::after, .underline3::after, .underline4::after, .underline5::after, .underline6::after, .underline7::after, .underline8::after {
+        bottom: -8px !important;
+    }
+
+    /*underline*/
+    /*h3*/
+    .underline9::after{
+        bottom: -3px !important;
+    }
+
+    main{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+        height:auto;
+        width:100%;
+    }
+
+    #hero{
+        width:100%;
+        height:auto;
+    }
+
+    h1{
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    h2{ /* seccções equipa*/
+        font-size: 34px;
+        line-height: 38px;
+    }
+
+    h3{ /* nomes equipa cards*/
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    h4{ /*texto abaixo título*/
+        font-family: "RobotoRegular";
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .hero-esq h4{
+        margin-top:8%;
+    }
+
+    .hero-esq{
+        margin-top: 10%;
+        width:100%;
+        height:auto;
+    }
+
+    .hero-dta{
+        width:100%;
+        height:auto;
+        margin-top: 14%;
+    }
+
+    p{
+        font-size: 22px !important;
+        line-height: 26px !important;
+    }
+
+    .tiny{
+        font-size: 18px !important;
+        line-height: 22px !important;
+    }
+
+    .contact p{
+        font-size: 22px !important;
+        line-height: 26px !important;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////BUTTONS*/
+
+    .button{
+        padding:3%;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 22px !important;
+        font-size: 22px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////ABOUT*/
+
+    #about{
+        width:100%;
+        height:auto;
+    }
+
+    .about{
+        width:92%;
+        height:auto;
+        margin:4%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding:3%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .about-esq{
+        width:100%;
+        height: auto;
+    }
+
+    .about-dta{
+        width:100%;
+        height: auto;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////TEAM*/
+
+    #team{
+        width:100%;
+        height:auto;
+    }
+
+    .team, .content-team, .cards-teamB{
+        width:100%;
+        height:auto;
+    }
+
+    .media-scrollerB{
+        width:100%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .media-scrollerB1, .media-scrollerB2{
+        width:100%;
+        height:auto;
+    }
+    
+    .team-cardB {
+        width: 32vw;
+        height: 42vw;
+        border-radius: 18px;
+    }
+
+    .team-card-bottom p{ 
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .content-scrollerB1{
+        gap:80%;
+        padding-right: 60%;
+        margin-bottom:7%;
+    }
+
+    .content-scrollerB2{
+        gap:32%;
+        padding-right: 25%;
+    }
+
+    .popup-content {
+        padding-top: 3%;
+        padding-bottom: 3%;
+        border-radius: 10px;
+        width: 70%;
+      }
+
+    /*//////////////////////////////////////////////////////////////////////SERVICES*/
+
+    .services{
+        padding-left: 8%;
+        padding-right: 8%;
+        padding-bottom: 16%;
+    }
+
+    .cards-rules2 {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+        /*gap: 2%; /* Adjust spacing if needed */
+    }
+
+    .rules{
+        padding-top: 8%;
+    }
+
+    .rules h1{
+        margin-bottom: 8%;
+    }
+
+    .cards-rules2:last-of-type {
+        /* Add your styles here */
+        padding-bottom: 30%;
+    }
+
+    .rule{
+        height: 40vh;
+    }
+
+    .rule img{
+        height:7vh;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////REVIEWS*/
+
+    .reviews{
+        padding-left: 7vw;
+        padding-right: 7vw;
+        padding-bottom: 10%;
+    }
+
+    .review-card{
+        margin-left: 0;
+    }
+
+    .blur-overlay {
+        display:none;
+    }
+
+    .media-scroller2{
+        grid-auto-columns: 50%; /*deixar valor que deixa o ultimo item meio tapado meio de fora para mostrar que continua*/
+        gap: 16px;
+        padding-right: 6%;
+    }
+
+    .review-card {
+        width: 100%;
+        height: 44vh;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////FAQS*/
+
+    .faqs{
+        padding-left: 13vw; /*9+x*/
+        padding-right: 13vw;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Contactos*/
+
+    .contact{
+        padding-left: 16vw;
+        padding-right: 16vw;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Footer*/
+
+    .footer-top{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .footer-top h1{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .stroke{
+        width:80%;
+        height: 2px;
+    }
+
+    .footer-logos{
+        width:30%;
+        margin-top: 3%;
+    }
+
+    .footer-logos a{
+        display:flex;
+        justify-content: center;
+    }
+
+    .footer-bottom{
+        width:84%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-footer p:last-child{
+        margin-top: 1%;
+    }
+
+    .footer-footer p:first-child{
+        margin-top: 0;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Newsletter*/
+
+    .content-blog h1{
+        margin-top:6vh !important;
+    }
+
+    .entry-card {
+        background-color: white;
+        width: 22vw;
+        height: 30vw !important;
+    }
+
+    .entry-card-top{
+        height:60% !important;
+    }
+
+    .entry-card-bottom{
+        height:40% !important;
+        padding:8% !important;
+    }
+
+    .entry-card-bottom p{
+        font-size: 17px !important;
+        line-height: 20px !important;;
+    }
+
+    .entries{
+        margin-top: 4% !important;
+        margin-bottom: 4% !important;
+    }
+
+    .popup-content-blog p{
+        line-height: 34px !important;
+    }
+
+
+}
+
+/* AINDA TABLET PEQUENO*/
+/* NEWSLETTER 2 COLUNAS e CARDS EQUIPA*/
+@media (max-width: 800px){
+
+    .team-cardB {
+        width: 32vw;
+        height: 52vw;
+        border-radius: 18px;
+        margin-bottom: 30%;
+    }
+
+    .entries{
+        grid-template-columns: repeat(2, 1fr) !important; /* Two columns for smaller screens */
+        margin-top: 8% !important;
+        margin-bottom: 8% !important;
+    }
+
+    .entry-card {
+        background-color: white;
+        width: 34vw !important;
+        height: 38vw !important;
+        margin-left:5% !important;
+        margin-right:5% !important;
+    }
+
+}
+
+/* MEDIDAS SMART PHONE */
+@media (max-width: 480px) {
+
+    /*//////////////////////////////////////////////////////////////////////GERAL*/
+
+    /*underline*/
+    /*h1*/
+    .underline::after, .underline3::after, .underline4::after, .underline5::after, .underline6::after, .underline7::after, .underline8::after {
+        bottom: 0px !important;
+        height: 15px !important;
+    }
+
+    /*underline*/
+    /*h3*/
+    .underline9::after{
+        height: 10px !important;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 80;
+    }
+
+    h2{ /* seccções equipa*/
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    h3{ /* nomes equipa cards*/
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 200;
+    }
+
+    h4{ /*texto abaixo título no hero*/
+        font-family: "RobotoRegular";
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: normal;
+    }
+
+    h5{
+        font-size: 26px;
+        font-weight: normal;
+    }
+
+    p{
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    .tiny{
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }
+
+    .contact p{
+        font-size: 18px !important;
+        line-height: 22px !important;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////HERO*/
+    
+    .hero-esq h4{
+        margin-top:6%;
+    }
+
+    .content-hero-esq h4:nth-child(3){
+        margin-bottom:4%;
+    }
+
+    .hero-esq{
+        height:90vh;
+        margin-top: 0;
+    }
+
+    .hero-esq .button{
+        width: 170px;
+        justify-content: center;
+    }
+
+    .content-hero-esq{
+        margin-top: 0;
+    }
+
+    .hero-dta{
+        margin-top:0;
+        margin-bottom:10vh;
+        padding:0;
+        height:40vh;
+        align-items: center;
+        
+    }
+
+    /*//////////////////////////////////////////////////////////////////////BUTTONS*/
+
+    .button{
+        padding:3%;
+        padding-left: 14px;
+        padding-right: 14px;
+        border-radius: 16px !important;
+        font-size: 18px;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////ABOUT*/
+
+    .about{
+        padding-top:10%;
+        padding-bottom:10%;
+    }
+    
+    /*//////////////////////////////////////////////////////////////////////TEAM*/
+
+    
+    .team-cardB {
+        width: 40vw;
+        height: 60vw;
+        border-radius: 18px;
+    }
+
+    .team-cardB p{
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }
+
+    .content-scrollerB1{
+        gap: 110%;
+    }
+
+    .content-scrollerB2{
+        gap: 47%;
+    }
+
+    .popup-content {
+        padding-top: 10%;
+        padding-bottom: 14%;
+        border-radius: 13px;
+        width: 86%;
+    }
+
+    .popup-header{
+        margin-bottom:2%;
+    }
+
+    #popup-description p{
+        padding-top:5%;
+        padding-bottom:5%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////SERVICES*/
+
+    .cards-services{
+        padding:8%;
+    }
+
+    .card-content .card-top p{
+        margin-top: 10%;
+    }
+
+    .cards-rules2 {
+        grid-template-columns: 1fr; /* Two columns for smaller screens */
+        gap: 2%; /* Adjust spacing if needed */
+    }
+
+    .cards-rules2:last-of-type {
+        /* Add your styles here */
+        padding-bottom: 60%;
+    }
+    
+    .cards-rules2:last-of-type {
+        /* Add your styles here */
+        padding-bottom: 80%;
+    }
+
+    .rule{
+        height:auto;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////REVIEWS*/
+
+    .media-scroller2{
+        grid-auto-columns: 70%; /*deixar valor que deixa o ultimo item meio tapado meio de fora para mostrar que continua*/
+    }
+
+    .review-card {
+        height: 60vh;
+    }
+
+    .cards-reviews{
+        margin-bottom: 10%;
+        margin-top: 10%;
+    }
+
+    .content-reviews{
+        margin-bottom:10%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////FAQS*/
+
+    .faqs{
+        padding-left: 6vw; /*9+x*/
+        padding-right: 6vw;
+    }
+
+    .cards-faqs{
+        margin-top:5%;
+    }
+
+    .faq-answer{
+        margin-top:4%;
+    }
+
+    .faqs p{
+        line-height: 24px !important;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Contactos*/
+
+    .content-contact p{
+        margin-top:10%;
+        font-size: 16px !important;
+    }
+
+    .contact-logos{
+        height:100%;
+        width:80%;
+    }
+
+    .contact .button{
+        padding:5%;
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 10%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Footer*/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+    }
+    .footer{
+        min-height: auto;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-top{
+        margin-bottom: 3%;
+    }
+
+    .footer-top h1{
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .footer-logos{
+        width:100%;
+        margin-top: 4%;
+    }
+
+    .footer-bottom{
+        margin-bottom: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-footer{
+        text-align: center;
+    }
+
+    .footer-footer p{
+        margin-bottom:2%;
+    }
+
+
+    .hideMobile{
+        display:none;
+    }
+
+    .showMobile{
+        display:flex;
+    }
+
+    
+    .footer-top{
+        display:flex;
+        flex-direction: row !important;
+        
+        margin-top: 6%;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        align-items: baseline;
+    }
+    
+    .footer-top .logo{
+        color:#F5F5F5;
+        width:39vw;
+        margin-right: 1%;
+    }
+    
+    .footer-top h1{
+        font-size: 28px;
+        margin-left: 1%;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Sidebar*/
+
+    .sidebar{
+        width:80vw;
+    }
+    
+    .sidebar .navbar-menu{
+        width:100%;
+    }
+
+    .navbar-li{
+        width:90%;
+        justify-content: center;
+    }
+
+    .navbar-li2{
+        width:75%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        margin-left:10%;
+        margin-right:10%;
+        justify-content: center;
+    }
+    
+    .sidebar .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    .sidebar .navbar-li, .sidebar .navbar-li2{
+        margin-top:3%;
+        margin-bottom: 3%;
+        font-size: 26px;
+    }
+    
+    .sidebar .navbar-li:nth-of-type(2) {
+        margin-top: 10% !important;
+    }
+    
+    .menuHamb{
+        margin: auto;
+        margin-right: 0;
+    }
+
+    /*//////////////////////////////////////////////////////////////////////Newsletter*/
+
+    .blog{
+        padding-left: 4vw !important;
+        padding-right: 4vw !important;
+    }
+
+    .entries{
+        grid-template-columns: 1fr !important; 
+        height:auto;
+    }
+
+    .entry-card{
+        width: 80vw !important;
+        height: 70vw !important;
+        margin-left:6% !important;
+        margin-right:10% !important;
+        margin-top: 2% !important;
+        margin-bottom: 2% !important;
+    }
+
+    .entry-card:last-child{
+        margin-bottom: 30% !important;
+    }
+
+    .content-blog{
+        height:auto;
+    }
+
+    .blog-description{
+        text-align: left !important;
+    }
+
+    .popup-content-blog{
+        width:90% !important;
+        height:90% !important;
+        /*padding: 5% !important;*/
+    }
+
+    .popup-content-blog p{
+        line-height: 24px !important;
+    }
+
+    .popup-content-blog img{
+        width: 80% !important; /* Adjust image width */
+        height: auto !important; /* Maintain aspect ratio */
+        margin-top:8% !important;
+        margin-bottom:8% !important;
+      }
+
+}
