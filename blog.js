@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Card data
     const cardData = [
+
+        
+        
         {
-            img: "assets/blog/dez.24.png",
+            img: "assets/blog/computador.png",
             date: "dezembro/24",
             author: "p/ Carolina e Francisco",
             popupInfo: `
@@ -101,9 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>Enquanto futuros/as médicos/as, é importante relembrar que é inimaginável para quem está fora deste universo o impacto que esta prova pode ter e que é uma experiência que só quem a tem sabe realmente do que se trata.</p>
         <p>No nosso caso, a calma e a paciência também foram o caminho para chegar lá. Definir um plano de estudo, fazer dele um plano de ação como se de trabalho em equipa se tratasse e agir em conformidade sem esquecer que <b>atrás do/a estudante continua uma pessoa.</b> Sem esquecer que podem existir momentos de frustração, de cansaço e de querer que o dia simplesmente chegue e a angústia acabe (também tivemos um ou outro momento desses por aqui). E esses dias são normais porque, afinal de contas, são poucas horas para avaliar conhecimentos de anos.</p>
         <p>Sinto que a minha posição é de privilégio por ter partilhado o percurso até à PNA com alguém que via a PNA como mais uma avaliação, confiante de que o resultado obtido estará bem e sei que nem toda a gente a verá da mesma forma. As coisas terão sempre a importância que lhes damos. E está tudo bem. Está tudo bem desde que a prova e o resultado não definam identidades. <b><i>Somos sempre mais que uma nota.</i></b></p>
-        <p>Dalila</p>
-
-        
+        <p>Dalila</p>  
       `,
         },
         {
